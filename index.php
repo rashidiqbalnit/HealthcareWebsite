@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
 
     <!-- custome css file link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!--for scrolling image css-->
     <!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
@@ -92,9 +92,9 @@
 <br><br>
 <section class="sec">
   <div class="w3-content">
-    <img class="mySlides" src="images/d5.jpg">
-    <img class="mySlides" src="images/d6.jpg">
-    <img class="mySlides" src="images/d7.jpg">
+    <img class="mySlides" src="d5.jpg">
+    <img class="mySlides" src="d6.jpg">
+    <img class="mySlides" src="d7.jpg">
   </div>
 </section>
 <!--image sliding end-->
@@ -122,7 +122,7 @@
      <div class="row align-items-center">
 
        <div class="col-md-6 image">
-          <img src="images/b.jpg" class="w-100 mb-4 mb-md-0" alt="">
+          <img src="b.jpg" class="w-100 mb-4 mb-md-0" alt="">
        </div>
 
        <div class="col-md-6 content">
@@ -281,7 +281,7 @@
 
         <div class="swiper-slide slide">
             <div class="image">
-                <img src="images/team-4.jpg" alt="">
+                <img src="team-4.jpg" alt="">
                 <div>
                    <br>
                    <h3>Dr. Avik Karak</h3>
@@ -293,7 +293,7 @@
 
         <div class="swiper-slide slide">
             <div class="image">
-                <img src="images/team-3.jpg" alt="">
+                <img src="team-3.jpg" alt="">
                 <div>
                   <br>
                   <h3>Dr. Sumanta Sarkar</h3>
@@ -335,7 +335,7 @@
      <h1 class="heading">Satisfied Clients</h1>
      <div class="box-container container">
          <div class="box">
-             <img src="images/ajhar.jpeg" alt="">
+             <img src="ajhar.jpeg" alt="">
              <p>The ophthalmologist provided exceptional care and thoroughly addressed my eye concerns, leaving me highly satisfied with the treatment and expertise. I would highly recommend the doctor for anyone seeking top-notch eye care.</p>
              <div class="stars">
                  <i class="fas fa-star"></i>
@@ -349,7 +349,7 @@
          </div>
 
          <div class="box">
-            <img src="images/farhan.jpg" alt="">
+            <img src="farhan.jpg" alt="">
             <p>The physician doctor demonstrated outstanding medical knowledge and genuine concern for my well-being, guiding me through the diagnosis and treatment process with compassion and expertise. I am truly grateful for the excellent care I received.</p>
             <div class="stars">
                  <i class="fas fa-star"></i>
@@ -363,7 +363,7 @@
          </div>
 
          <div class="box">
-            <img src="images/dilshad.jpg" alt="">
+            <img src="dilshad.jpg" alt="">
             <p>The physiotherapist doctor's personalized treatment plan and attentive approach helped me recover from my injury faster than I expected. Their expertise and dedication made a significant difference in my rehabilitation journey, and I highly recommend their services.</p>
             <div class="stars">
                  <i class="fas fa-star"></i>
@@ -681,7 +681,7 @@ function carousel() {
   
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
