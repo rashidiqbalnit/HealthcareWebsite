@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/specialist3.css">
+<!-- <style>
+</style>-->
+</head>
+<body>
+
+  <!--Border Part-->
+    <div class="topnav">
+        <a class="active" href="#home"> serch all types of doctor </a>
+       <!---- <a href="">About</a>-->
+       <!-- <a href="#contact">Contact</a>-->
+        <input type="text" placeholder="Search..">
+      </div>
+
+
+  <!--Doctor name Part-->
+  <section class="process" id="process">
+    <br><br>
+      <div class="box-container container">
+        <div class="box">
+            <img src="https://media.istockphoto.com/id/1371010166/photo/portrait-of-a-young-dentist-showing-thumbs-up-in-his-consulting-room.jpg?s=612x612&w=0&k=20&c=kGF6soqO3GNXIoB-fVEMwhrQrTRFLwSZl0y0tlmVQeo=" alt="">
+            <h3><a>Dr. Ramakanta Panda</a></h3>
+            <p>(MBBS , MD - 10yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+      </div>
+      <br><br>
+      <div class="box-container container">
+        <div class="box">
+            <img src="https://img.freepik.com/free-photo/confident-attractive-male-doctor-wearing-white-lab-coat-while-standing-with-arms-crossed-against-turquoise-background_662251-1654.jpg" alt="">
+            <h3><a>Dr. Shivashankar Roy</a></h3>
+            <p>(MBBS , MD - 10yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+      </div>
+      <br><br>
+      <div class="box-container container">
+        <div class="box">
+            <img src="https://thumbs.dreamstime.com/b/indian-doctor-mature-male-medical-standing-isolated-white-background-handsome-model-portrait-31871541.jpg" alt="">
+            <h3><a>Dr. Vinod Raina</a></h3>
+            <p>(MBBS , MD - 10yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+      </div>
+      <br><br>
+      <div class="box-container container">
+        <div class="box">
+            <img src="https://thumbs.dreamstime.com/b/indian-doctor-woman-23462721.jpg" alt="">
+            <h3><a>Dr. Yash Gulati</a></h3>
+            <p>(MBBS , MD - 10yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+      </div>
+      <br><br>
+      <div class="box-container container">
+        <div class="box">
+            <img src="https://img.freepik.com/premium-photo/smiling-asian-woman-physician-white-coat_9083-2472.jpg" alt="">
+            <h3><a>Dr. Hemant Kalyan</a></h3>
+            <p>(MBBS , MD - 10yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+      </div>
+      <br><br>
+      <div class="box-container container">
+        <div class="box">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <h3><a>Dr. Sachin Suresh Jadhav</a></h3>
+            <p>(MBBS , MD - 10yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://i0.wp.com/newdpz.com/wp-content/uploads/2023/07/1690229418_4_30-Best-Mere-hath-me-tera-hath-ho-fana-song.jpeg?w=708&ssl=1" alt="">
+          <h3><a>Dr. Devi Prasad Shetty</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://thumbs.dreamstime.com/b/young-doctor-16088825.jpg" alt="">
+          <h3><a>Dr. Mohamed Rafi</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://img.freepik.com/free-photo/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini_1258-88108.jpg?w=2000" alt="">
+          <h3><a>Dr. Vinod Kumar</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://media.istockphoto.com/id/1080237358/photo/indian-male-doctor-on-blue-background-stock-image.jpg?s=612x612&w=0&k=20&c=584Xv0Nsqtxl1wGVGjDH7aunkBDWguG3nyR3sxEh4tU=" alt="">
+          <h3><a>Dr. Dhiraj Balaji</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://t4.ftcdn.net/jpg/03/20/52/31/360_F_320523164_tx7Rdd7I2XDTvvKfz2oRuRpKOPE5z0ni.jpg" alt="">
+          <h3><a>Dr. Darshan Patil</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://www.liveabout.com/thmb/zNzhc9WxUE_lf6r3P0yuAfBaoV0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/doctor-with-stethoscope-in-hospital-642394515-5aa9a0b8a9d4f90037431454.jpg" alt="">
+          <h3><a>Dr. Murali Mohan C.R</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*" alt="">
+          <h3><a>Dr. Mathew Jacob</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVUSFsUJ5Q1kYPD9TNqnq_x_MBWoVRAY_go0KNdlY87HFVgreOcbq9ulk6UAtAsq6GNE0&usqp=CAU" alt="">
+          <h3><a>Dr. Apurva Pande</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKHZ0PFKn1b8RLf8aztKjHc63QqIdAP-6Net-694GemtFCmvD2soTT6Hj9XAXN7DhS8w&usqp=CAU" alt="">
+          <h3><a>Dr. Sujatha Thyagarajan</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://img.freepik.com/premium-photo/handsome-hispanic-doctor-man-wearing-stethoscope-clinic-with-happy-cool-smile-face-lucky-person_255667-47449.jpg" alt="">
+          <h3><a>Dr. Dhananjaya Bhat</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSuYZbNHzWxglYJSHuMJBSaZPVst0VPU07qOuoCDk8OYiVf6AyntyI_m7PTk1ADf9zW4&usqp=CAU" alt="">
+          <h3><a>Dr. Sreekanta Swamy</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+      <div class="box">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/000/859/306/small/smiling-doctor-portrait.jpg" alt="">
+          <h3><a>Dr. J V Srinivas</a></h3>
+          <p>(MBBS , MD - 10yr Exp.)</p>
+          <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+          <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+          <h3><a href="video-call.html">Video Call</a></h3>
+      </div>
+
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+      <div class="b">
+        <img src="" alt="">
+        <h3></h3>
+      </div>
+   </div>
+   <br><br>
+   <div class="box-container container">
+    <div class="box">
+        <img src="https://media.gettyimages.com/id/1298800629/photo/portrait-of-confident-male-doctor-looking-at-camera.jpg?s=612x612&w=gi&k=20&c=nxBik4I0ORxThvu1UCzJkUA9D9BBTRtwLdHYa_aMupM=" alt="">
+        <h3><a>Dr. G Girish</a></h3>
+        <p>(MBBS , MD - 10yr Exp.)</p>
+        <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+        <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+        <h3><a href="video-call.html">Video Call</a></h3>
+    </div>
+
+    <div class="b">
+      <img src="" alt="">
+      <h3></h3>
+    </div>
+    <div class="b">
+      <img src="" alt="">
+      <h3></h3>
+    </div>
+   </div>
+   <br><br>
+   <br><br>
+    <div class="box-container container">
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqK61qmsFwlXX5VbQH5tWa_xq4EHU5ENda_ZXVuc1SWb-WptWeQNTd6gWph07wroLSGQ&usqp=CAU" alt="">
+            <h3><a> Dr. Ashok Seth </a></h3>
+            <p>(MBBS , MD - 10yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+        <div class="box">
+            <img src="https://media.gettyimages.com/id/1178543505/photo/male-nurse-with-stethoscope.jpg?s=612x612&w=0&k=20&c=AXrU8wWUWoMKVjT8_ZhdqrAkXz2kA-Wo8UBfemou6sM=" alt="">
+            <h3><a>Dr. Amir</a></h3>
+            <p>(MBBS - 2yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+        <div class="box">
+            <img src="https://media.gettyimages.com/id/109374813/photo/portrait-of-cheerful-female-doctor.jpg?s=612x612&w=0&k=20&c=yYbQQsP_wWkpWfRSH7Qvs4iEjwTBEB9nhfUXgL4uvII=" alt="">
+            <h3><a>Dr. Iram</a></h3>
+            <p>(MBBS , MD - 4yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+        
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+    </div>
+    <br><br>
+    <div class="box-container container">
+        <div class="box">
+            <img src="https://media.gettyimages.com/id/1162863844/photo/indian-physician-standing-in-hospital-corridor.jpg?s=612x612&w=0&k=20&c=nlz7irutni3CaS5NgE1T7kj4dMpxdTxbsjNvyKmcSlc=" alt="">
+            <h3><a>Dr. Naresh Trehan</a></h3>
+            <p>(MBBS - 6yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+      </div>
+      <br><br>
+      <div class="box-container container">
+        <div class="box">
+            <img src="https://media.gettyimages.com/id/1298780374/photo/senior-male-doctor-looking-at-camera.jpg?s=612x612&w=0&k=20&c=OoFVt2BfRXmBXMyr_EknEpZOjij-T9Gp3FFVIMW_ix0=" alt="">
+            <h3><a>Dr. Bidhan Chandra Roy</a></h3>
+            <p>(MBBS - 5yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+      </div>
+      <br><br>
+      <div class="box-container container">
+        <div class="box">
+            <img src="https://media.gettyimages.com/id/1292015214/photo/portrait-female-doctor-stock-photo.jpg?s=612x612&w=0&k=20&c=nr4XaWnRPQnWqwhzahajZhskIDG1yK9DmIteV5gpUOI=" alt="">
+            <h3><a>Dr. Swarupa Mitra</a></h3>
+            <p>(MBBS , MD - 7yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+      </div>
+      <br><br>
+      <div class="box-container container">
+        <div class="box">
+            <img src="https://media.gettyimages.com/id/93186868/photo/doctor.jpg?s=612x612&w=0&k=20&c=kBf4iXxOvYUnSoJuuAzizGGLoxlJW6OIfVSo1sZiPQQ=" alt="">
+            <h3><a>Dr Santosh Shetty</a></h3>
+            <p>(MBBS - 3yr Exp.)</p>
+            <h3><a href="appointment-form.html"> Book Appointment </a></h3>
+            <h3><a href="payment-gateway.html"> Make Payment </a></h3>
+            <h3><a href="video-call.html">Video Call</a></h3>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div class="b">
+          <img src="" alt="">
+          <h3></h3>
+        </div>
+      </div>
+
+    </section>
+
+</body>
+</html>

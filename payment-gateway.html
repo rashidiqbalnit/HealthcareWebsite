@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/payment-gateway.css">
+    <title>payment-Gateway</title>
+
+</head>
+<body>
+     
+    <div class="draw">
+    <h2>After submitting Appointment form, Our team will contact to you, Then Make Payment....</h2d>
+    </div>
+    <div class="payment">
+        <img src="images/QR-SCANNER.jpg" alt="">
+        <div class="form">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="utr" placeholder="UTR Number" required>
+                <input type="datetime-local" id="datetime" name="date" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                 Host : "smtp.elasticemail.com",
+                 Username : "rashidiqbalbih@gmail.com",
+                 Password : "BAE6DB226F6C775EAB64FA92C46893C8D60D",
+                 To : 'rk6612262@gmail.com',
+                 From : "rashidiqbalbih@gmail.com",
+                 //document.getElementById("email").value,
+                 Subject : "Appointment Form",
+                 Body :   "Name: " + document.getElementById("name").value
+                        + "<br><hr> Phone no:  " + document.getElementById("phone").value
+                        + "<br><hr> UTR No.:  " + document.getElementById("utr").value
+                        + "<br><hr> Date-Time:  " + document.getElementById("datetime").value
+                        + "<br><hr>"
+            
+            }).then(
+            message => alert("Message Sent Succesfully")
+            );
+        }
+    </script>
+    
+</body>
+</html>

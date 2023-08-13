@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --blue:#00b8b8;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --light-bg:#eee;
+    --border:.2rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem .1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box; 
+    outline: none; border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+/* it used to fixed second appointement button in body*/
+section{
+    padding:7rem 2rem;
+}
+
+/* Service section start*/
+.heading{           /* it is use to set the "our services" to the center in uppercase*/
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.link-btn{
+    display: inline-block;
+    padding:1rem 1rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    curser:pointer;
+    font-size:1.7rem;
+    color:var(--white);
+}
+
+/* it is used to change the color of button of "make appointment"*/
+.link-btn:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* for creat border at top */
+.header{
+    padding: 2rem;
+    border-bottom: var(--border);
+    background-color: whitesmoke;
+}
+
+/* it is used to keep the picture below from the head*/
+.header.active{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: 0;
+}
+
+.header .logo{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.header .logo span{
+    color:var(--blue);
+}
+
+/* it is used to set the size like home,about,contact etc. */
+.header .nav a{
+    margin:0 1rem;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+/* it is used to make variable color of hadline like home,about,contact etc.*/
+.header .nav a:hover{
+    color: var(--blue);
+}
+
+/* three dot */
+#menu-btn{
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Scrolling image start*/
+.w3-content{
+    /*display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50%;
+}
+
+
+/* home section background editing*/
+.home{
+    background: url('https://img.freepik.com/free-photo/medium-shot-doctors-wearing-protective-equipment_23-2149994405.jpg?w=1380&t=st=1681674336~exp=1681674936~hmac=30a74ae225ae0cd7baa33c2e40fde973c9d417897dd35654ea038b2a6a678a8d');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+}
+
+.home .content{
+    width: 55rem;
+    padding: 2rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.home .content p{
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+/* about section background editing*/
+.about .row{
+    min-height: 50vh;  /* it is used to seperate home-section and about-section vertically*/
+}
+
+.about .content span{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.about .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    margin-top: 5rem;
+}
+
+.about .content p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+/*Our Service section start*/
+.services{
+    background-color: var(--light-bg);
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));  /*it is use to creat column*/
+    gap:2rem;
+}
+
+.services .box-container .box{
+    text-align: center;
+    padding: 1rem; /*2rem*/
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.services .box-container .box img{
+    margin: 1rem 0;
+    height: 5rem;
+}
+
+.services .box-container .box h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+
+.services .box-container .box p{
+    font-size: 1.3rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+
+/*Work-Process section start*/
+.process .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));  /*it is use to creat column*/
+    gap:2rem;
+}
+
+.process .box-container .box{
+    background-color: var(--blue);
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.process .box-container .box img{
+    height: 16rem;
+    margin: 1rem 0;
+}
+
+.process .box-container .box h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin: 1.5rem 0;
+}
+
+.process .box-container .box p{
+    font-size: 1.3rem;
+    color: var(--white);
+    line-height: 2;
+}
+      
+      
+
+
+
+/* team section*/
+.team{
+    background-color: paleturquoise;
+}
+
+.team .slide{
+    text-align: center;
+}
+
+.team .slide .image{
+    position: relative;
+    overflow: hidden;
+}
+
+.team .slide .image img{
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+}
+
+.team .slide .image .share{
+    padding: 1rem;
+    position: absolute;
+    bottom: -10rem;
+    left: 0; right: 0;
+    background: rgba(0,0,0,.8);
+}
+
+.team .slide:hover .image .share{
+    bottom: 0;
+}
+
+.team .slide .image .share a{
+    font-size: 3rem;
+    margin: 0 1rem;
+    color: var(--white);
+}
+
+.team .slide .image .share a:hover{
+    color: var(--secondary);
+}
+
+.team .slide .content{
+    display: flex;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team .slide .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.team .slide .content span{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--light-color);
+}
+/* team section ends */
+
+
+
+
+
+
+/*reviews section starts*/
+.reviews{
+    background-color:var(--light-bg);
+}
+
+.reviews .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));  /*it is use to creat column*/
+    gap:2rem;
+}
+
+.reviews .box-container .box{
+    background-color: var(--white);
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+
+.reviews .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.reviews .box-container .box p{
+    padding: 2rem 0;
+    line-height: 2;
+    font-size: 1.3rem;
+    color: var(--light-color);
+    margin-bottom: 0;
+}
+
+.reviews .box-container .box .stars{
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    margin-bottom: 2rem;
+    display:inline-block;
+}
+
+.reviews .box-container .box .stars i{
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+.reviews .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.reviews .box-container .box span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+
+
+
+
+/*contact section starts*/
+.contact form{
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 50rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}*/
+
+/*experiment*/
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+form select{
+    border: 0;
+    margin: 4px 0;
+    padding: 14px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 4px 0;
+    padding: 12px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 15px;
+}
+
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+
+
+/* try try /*contact section starts 
+.contact{
+    width: 100%;
+    height: 100vh;
+    background: #001660;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form select{
+    border: 0;
+    margin: 4px 0;
+    padding: 14px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 4px 0;
+    padding: 12px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* It used to change lete above name box.
+.contact form span{
+    font-size: 1.7rem;
+    color: var(--black);
+}*/
+
+
+/* footer section start*/
+.footer{
+    background-color: var(--light-bg);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));  /*it is use to creat column*/
+    gap:3rem;
+}
+
+.footer .box-container .box{
+    text-align: center;
+}
+
+.footer .box-container .box i{
+    height: 5rem;
+    width:5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    /*margin-bottom: 1rem;*/
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--black);
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-transform: none;
+    /*line-height: 2;*/
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: var(--border);
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.footer .credit span{
+    color:var(--blue);
+}
+
+.footer .box-container .box a{
+    color: #333;
+}
+/*foooter section end*/
+
+
+
+
+
+
+
+
+/* media queries*/
+@media (max-width:991px) {
+
+    html{
+        font-size: 55%;
+    }
+
+ .header .link-btn{
+    display: none;
+ }
+
+ /* it used to fixed second appointement button in body*/
+ section{
+    padding:5rem 2rem;
+}
+
+}
+
+
+@media (max-width:768px) {
+    
+    /* it used to fixed second appointement button in body*/
+    section{
+        padding:3rem 2rem;
+    }
+
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .nav{
+        position: absolute;
+        top:99%; left: 0; right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        padding: 1rem 0;
+        text-align: center;
+        flex-flow:column;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+ 
+    .header .nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    /*it is using to write like home,about,contact etc. vertically*/
+    .header .nav a{
+        margin:1rem 0;
+        /* it is used to bold the word */
+        font-size:2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+    .home .content{
+        width: auto;
+    }
+
+}
+
+
+@media (max-width:450px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .content h3{
+        font-size: 4rem;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+}
